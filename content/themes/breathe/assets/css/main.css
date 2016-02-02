@@ -358,38 +358,43 @@ th {
   padding: 0;
 }
 body {
-  background: #ffffff;
-  color: #333333;
+  background: #fff;
+  color: #333;
   font-family: Cardo, Gerogia, serif;
   font-size: 1.3em;
   line-height: 1.6em;
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 a:hover {
-  color: #000000;
+  color: #000;
   background: #fdf9ec;
 }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   width: 25%;
   margin: 2em auto;
 }
 blockquote {
-  border-left: 2px solid #cccccc;
+  border-left: 2px solid #ccc;
   padding: 0.1em 1em;
   margin-left: 0.75em;
 }
 .main-wrapper {
-  max-width: 42em;
+  max-width: 85%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    max-width: 42em;
+  }
 }
 .main-header {
   display: flex;
@@ -475,6 +480,11 @@ blockquote {
 .post img {
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .post img {
+    width: 100%;
+  }
 }
 .post-content hr {
   width: 10%;
